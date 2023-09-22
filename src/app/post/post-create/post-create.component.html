@@ -1,8 +1,15 @@
 <!-- Event Blinding -->
 
+<!-- [(ngModel)] = "ทำงานเป็น Two-way Blinding (properties + $event)" -->
+<!-- [ngModel] = "ทำงานเป็นตัวแปร properties" -->
+<!-- (ngModelChange) = "ทำงานเป็นตัวแปร $event" -->
+
+
 <mat-card>
   <mat-form-field>
     <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
     <button mat-raised-button color="accent" (click)="onAddPost()">Save Post!</button>
   </mat-form-field>
 </mat-card>
+
+<div>{{newPost}}</div>
